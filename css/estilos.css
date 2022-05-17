@@ -19,6 +19,7 @@ body {
   .container {
     display: grid;
     place-items: center;
+    margin-top: 90px;
   }
   .images--ev {
     display: grid;
@@ -40,7 +41,6 @@ body {
   }
   .view {
     border-radius: 8px;
-    margin: 10px;
     position: absolute;
     z-index: -1;
   }
@@ -99,8 +99,34 @@ body {
   margin-bottom: 25px;
   color: var(--Soft-blue);
  }
+ .creation {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+ .creation img {
+   width: 30px;
+ }
+ .creation p {
+   margin-inline-start: 15px;
+   color: var(--Soft-blue);
+ }
+ .creation span {
+   color: var(--White);
+ }
+ .creation span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
  /*mediaqueries*/
 @media (max-width: 375px) {
+  .container {
+    margin-top: 25px;
+  }
+  .card {
+    margin: auto 20px;
+    padding: 20px;
+  }
  .equilibrium {
    width: 90%;
  }
