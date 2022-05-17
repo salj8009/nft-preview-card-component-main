@@ -36,6 +36,7 @@ body {
     margin: 10px;
     z-index: 1;
     background-color: var(--Cyan);
+    width: 250px;
   }
   .view {
     border-radius: 8px;
@@ -52,7 +53,52 @@ body {
     filter: opacity(.4);    
     cursor: pointer;
   }
- 
+  .content-title {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;    
+    margin: 15px;
+  }  
+  .title {
+    color: var(--White);
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .title:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+  }
+  .text-description {
+    color: var(--Soft-blue);
+    margin-bottom: 20px;
+  }
+  .price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-between;
+  }
+  .eth {
+    display: flex;
+  }
+  .clock {
+    display: flex;
+  }
+  .txteth {
+    margin-inline-start: 11px;
+    color: var(--Cyan);
+  }
+  .days {
+  margin-inline-start: 11px;
+  color: var(--Soft-blue);
+ }
+ hr {
+  width: -webkit-fill-available;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: var(--Soft-blue);
+ }
  /*mediaqueries*/
 @media (max-width: 375px) {
  .equilibrium {
